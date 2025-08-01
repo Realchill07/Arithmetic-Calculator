@@ -7,7 +7,8 @@ int main(){
     float sub;
     float multiply;
     float divide;
-    printf("This is a calculator for arithematic operations on two numbers[Calculates till 6 decimals :)] .Choose\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for Divide\n ");
+    float percentage;
+    printf("This is a calculator for operations on two numbers[Calculates till 6 decimals :)] .Choose\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for Divide\n 5 for percentage\n");
     scanf("%d",&x);
     printf("\n Input first number : ");
     scanf("%f",&a);
@@ -28,6 +29,10 @@ int main(){
     else if (x==4) {
         divide = a/b;
         printf("After dividing %f by %f we get : %f",a,b,divide);
+    }
+    else if (x==5) {
+        percentage = (a / b) * 100;
+        printf("%f is %f percent of %f",a,percentage,b);
     }
     else {
         printf("Please write a number from the given options and rerun the application");
